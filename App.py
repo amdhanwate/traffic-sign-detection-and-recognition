@@ -9,7 +9,7 @@ import pandas as pd
 with open("./css/app.css", "r") as css:
     st.markdown(f'<style>{css.read()}</style>', unsafe_allow_html=True)
 
-model_dir = r"C:\Users\SAI\Desktop\Traffic Sign Detectiona and Recognition\trained models\pedestrian"
+model_dir = r"./trained models/pedestrian/"
 
 models = {
     "KNN": pickle.load(open(os.path.join(model_dir, "model_knn.sav"), "rb")),
