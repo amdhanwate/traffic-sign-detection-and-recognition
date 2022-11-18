@@ -21,8 +21,10 @@ models = {
     "kmeans_model": pickle.load(open(os.path.join(model_dir, "Kmeans_CL_5_Model.sav"), "rb"))
 }
 
-models_options = ["KNN", "lr_model", "svm_model", "rf_model", "svc_model", "dt_model", "kmeans_model"]
-models_display = ["KNN", "Logistic Regression", "SVM", "Random Forest", "SVC", "Decision Tree", "K-Means"]
+# models_options = ["KNN", "lr_model", "svm_model", "rf_model", "svc_model", "dt_model", "kmeans_model"]
+# models_display = ["KNN", "Logistic Regression", "SVM", "Random Forest", "SVC", "Decision Tree", "K-Means"]
+models_options = ["KNN", "kmeans_model"]
+models_display = ["KNN", "K-Means"]
 
 # def workKNN()
 
